@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Distress Detector (SSD) - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SSD Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#problem">Problem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solution">Solution</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#novelty">Novelty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="demo.html">Demo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Welcome to Silent Distress Detector (SSD)</h1>
+            <p class="lead">A Sensor-Based Software System for Detecting Unnoticed Personal Emergencies</p>
+            <div class="mt-3">
+                <a href="#problem" class="btn btn-light btn-lg mx-2">Problem</a>
+                <a href="#solution" class="btn btn-light btn-lg mx-2">Solution</a>
+                <a href="#novelty" class="btn btn-light btn-lg mx-2">Novelty</a>
+                <a href="#contact" class="btn btn-light btn-lg mx-2">Contact</a>
+                <a href="demo.html" class="btn btn-light btn-lg mx-2">Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="problem" class="container my-5">
+        <h2>Real-Life Problem Statement</h2>
+        <p>In daily life, many individuals such as elderly people living alone, hostel students, night-shift workers, and individuals with anxiety or medical conditions may experience sudden personal distress (panic, shock, weakness, or medical discomfort) where they are unable to call for help or press an emergency button.</p>
+        <p>Existing emergency systems depend on:</p>
+        <ul>
+            <li>Manual SOS buttons</li>
+            <li>Fall-detection devices</li>
+            <li>Voice or camera-based monitoring</li>
+        </ul>
+        <p>These approaches fail in situations where the person remains silent, immobile, conscious but frozen, or mentally unable to respond. Currently, there is no automatic system that identifies such silent distress situations using everyday sensors without requiring user action.</p>
+    </section>
+
+    <section id="solution" class="container my-5">
+        <h2>Proposed Solution</h2>
+        <p>The proposed system, Silent Distress Detector (SSD), is a software-based sensor intelligence system that passively monitors abnormal inactivity patterns using sensors already available in smartphones or wearable devices.</p>
+        <h3>Working Principle</h3>
+        <p>The system first learns the user’s normal daily activity pattern.</p>
+        <p>It continuously monitors:</p>
+        <ul>
+            <li>Movement data (accelerometer, gyroscope)</li>
+            <li>Interaction activity (screen usage, touch)</li>
+            <li>Context information (time, environment)</li>
+        </ul>
+        <p>When a rare and abnormal combination is detected—such as sudden prolonged stillness during normally active periods—the system identifies a possible silent distress event.</p>
+        <p>If the user does not respond to a soft confirmation alert, the system automatically sends a silent emergency notification to a predefined contact.</p>
+        <p>The system does not rely on voice, video, or manual input and functions completely in the background.</p>
+    </section>
+
+    <section id="novelty" class="container my-5">
+        <h2>Novelty of the Proposed Work</h2>
+        <p>The novelty of this project lies in its new interpretation of sensor data for emergency detection.</p>
+        <p>It introduces the concept of “silent distress”, which is not addressed by traditional SOS or fall-detection systems.</p>
+        <p>The system uses negative sensing, where the absence of expected activity is treated as a critical signal.</p>
+        <p>Unlike existing solutions, it does not require active user interaction, making it suitable for real-life situations where the user is unable to respond.</p>
+        <p>The solution is purely software-based, using existing sensors without additional hardware or medical devices.</p>
+        <p>To the best of our knowledge, no existing system or research work specifically focuses on detecting silent personal distress through inactivity-based sensor fusion.</p>
+        <h3>Novelty Justification Statement</h3>
+        <blockquote>“This project introduces a novel approach for detecting silent personal distress by analyzing abnormal inactivity patterns using existing device sensors. Unlike traditional emergency systems that rely on active user input or explicit events, the proposed system passively identifies distress situations through software-based negative sensing, which is not addressed in existing solutions.”</blockquote>
+        <p>Unnoticed personal emergency means a dangerous situation where a person needs help, but no one realizes it.</p>
+        <p>It happens when a person suddenly feels weak, panics, faints, or is mentally frozen and cannot call or ask for help.</p>
+        <p>There may be no loud noise, fall, or visible sign of danger.</p>
+        <p>Because the person stays silent or still, the emergency goes unnoticed by others.</p>
+        <p>The idea is to detect emergencies when a person cannot ask for help.</p>
+        <p>The system watches sensor data to notice unusual inactivity.</p>
+        <p>If the user does not respond, it automatically alerts a trusted contact.</p>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="response" class="mt-3"></div>
+    </section> 
+    <!-- Add this new section -->
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Silent Distress Detector Project. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
