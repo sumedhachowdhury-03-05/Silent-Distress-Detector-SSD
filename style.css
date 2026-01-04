@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; }
+.navbar-brand { font-weight: bold; }
+header { background: linear-gradient(to right, #007bff, #0056b3); }
+footer { position: sticky; bottom: 0; }
+.alert { animation: fadeIn 0.5s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
