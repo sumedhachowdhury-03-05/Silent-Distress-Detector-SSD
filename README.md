@@ -59,6 +59,8 @@ Mobile application support
 
 Automatic emergency alerts with location sharing
 
+MVP link :- https://sumedhachowdhury-03-05.github.io/Silent-Distress-Detector-SSD/
+
 👥 Team Details
 
 Group Name: Zen4
