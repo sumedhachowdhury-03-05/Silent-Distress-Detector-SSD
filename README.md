@@ -36,11 +36,17 @@ JavaScript
 📂 Project Structure
 
 ├── index.html
+
 ├── problem.html
+
 ├── solution.html
+
 ├── novelty.html
+
 ├── contact.html
+
 ├── styles.css
+
 └── script.js
 
 🚀 Future Scope
