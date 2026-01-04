@@ -3,107 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silent Distress Detector (SSD) - Home</title>
+    <title>Silent Distress Detector (SSD)</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="./src/styles.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">SSD Project</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#problem">Problem</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#solution">Solution</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#novelty">Novelty</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./src/demo.html">Demo</a></li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">SSD Project</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#problem">Problem</a></li>
+                <li class="nav-item"><a class="nav-link" href="#solution">Solution</a></li>
+                <li class="nav-item"><a class="nav-link" href="#novelty">Novelty</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-light px-3 ms-2" href="demo.html">Demo</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <header id="home" class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>Welcome to Silent Distress Detector (SSD)</h1>
-            <p class="lead">A Sensor-Based Software System for Detecting Unnoticed Personal Emergencies</p>
-            <div class="mt-3">
-                <a href="#problem" class="btn btn-light btn-lg mx-2">Problem</a>
-                <a href="#solution" class="btn btn-light btn-lg mx-2">Solution</a>
-                <a href="#novelty" class="btn btn-light btn-lg mx-2">Novelty</a>
-                <a href="#contact" class="btn btn-light btn-lg mx-2">Contact</a>
-                <a href="./src/demo.html" class="btn btn-light btn-lg mx-2">Demo</a>
-            </div>
-        </div>
-    </header>
+<header id="home" class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1>Silent Distress Detector (SSD)</h1>
+        <p class="lead">Detecting Unnoticed Personal Emergencies Using Sensor Intelligence</p>
+        <a href="demo.html" class="btn btn-light btn-lg mt-3">View Demo</a>
+    </div>
+</header>
 
-    <section id="problem" class="container my-5">
-        <h2>Real-Life Problem Statement</h2>
-        <p>
-            In daily life, many individuals such as elderly people living alone, hostel students,
-            night-shift workers, and individuals with anxiety or medical conditions may experience
-            sudden personal distress where they are unable to call for help.
-        </p>
-        <ul>
-            <li>Manual SOS buttons</li>
-            <li>Fall-detection devices</li>
-            <li>Voice or camera-based monitoring</li>
-        </ul>
-    </section>
+<section id="problem" class="container my-5">
+    <h2>Problem Statement</h2>
+    <p>
+        Many individuals face personal emergencies where they are unable to call for help.
+        Existing systems rely on manual input, which fails in silent distress situations.
+    </p>
+</section>
 
-    <section id="solution" class="container my-5">
-        <h2>Proposed Solution</h2>
-        <p>
-            Silent Distress Detector (SSD) is a software-based system that monitors abnormal inactivity
-            using existing smartphone or wearable sensors.
-        </p>
-    </section>
+<section id="solution" class="container my-5">
+    <h2>Proposed Solution</h2>
+    <p>
+        SSD passively monitors abnormal inactivity using existing smartphone sensors and
+        automatically alerts trusted contacts if the user fails to respond.
+    </p>
+</section>
 
-    <section id="novelty" class="container my-5">
-        <h2>Novelty of the Proposed Work</h2>
-        <blockquote>
-            “This project introduces a novel approach for detecting silent personal distress by
-            analyzing abnormal inactivity patterns using existing device sensors.”
-        </blockquote>
-    </section>
+<section id="novelty" class="container my-5">
+    <h2>Novelty</h2>
+    <p>
+        This system introduces the concept of <strong>silent distress detection</strong>
+        using negative sensing — identifying danger from the absence of activity.
+    </p>
+</section>
 
-    <section id="contact" class="container my-5">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <div class="mb-3">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Message</label>
-                <textarea class="form-control" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </section>
+<section id="contact" class="container my-5">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" class="form-control mb-3" placeholder="Name" required>
+        <input type="email" class="form-control mb-3" placeholder="Email" required>
+        <textarea class="form-control mb-3" rows="4" placeholder="Message" required></textarea>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2023 Silent Distress Detector Project. All rights reserved.</p>
-    </footer>
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Silent Distress Detector</p>
+</footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 
-    <!-- Local JS -->
-    <script src="./src/script.js"></script>
 </body>
 </html>
