@@ -59,7 +59,7 @@ Mobile application support
 
 Automatic emergency alerts with location sharing
 
-MVP link :- https://sumedhachowdhury-03-05.github.io/Silent-Distress-Detector-SSD/
+MVP link :- [https://sumedhachowdhury-03-05.github.io/Silent-Distress-Detector-SSD/](https://silent-distress-detector.vercel.app/)
 
 👥 Team Details
 
